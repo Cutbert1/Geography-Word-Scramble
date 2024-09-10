@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--- Google font and font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <h1 class="heading">
+        <img class="logo" src="assets/images/logo.png" alt="logo"> Geography Word Scramble Game
+    </h1>
+
+    <div id="game-area">
+        <h2 class="description">World Famous Landmarks</h2>
+        <div id="scrambled">
+            <h3 class="scrambleWord">Word</h3>
+            <p class="Hints"></p>
+        </div>
+        <div class="form">
+            <input id="input" type="text" placeholder="Guess correct Country and City">
+        </div>
+        <h4 id="declaration">Result:</h4>
+        <div id="footer">
+            <button type="button" onclick="check()">Check</button>
+            <button type="button" onclick="refresh()">Refresh</button>
+        </div>
+
+    </div>
     
+    <div class="score-area">
+        <p class="scores">Correcr Answers<span id="score">0</span></p>
+        <p class="scores">Incorrect Answers<span id="incorrect">0</span></p>
 
+    </div>
 
+    <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
