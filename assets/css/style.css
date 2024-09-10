@@ -1,0 +1,99 @@
+ /* Asterisk wildcard selector to overide default styles added by the browser */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+
+}
+
+.logo {
+    
+    height: 40px;
+    padding-right: 5px;
+}
+
+/* Game area */
+
+#game-area {
+   background-color: rgb(204, 180, 180); 
+   box-sizing: border-box;
+   width: 85%;
+   height: 75vh;
+   max-height: 450px;
+   max-width: 830px;
+   padding: 3%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: auto;
+    padding: 50px 0;
+    border-bottom: 4px dashed
+}
+
+h3 {
+    padding: 40px
+}
+
+input { 
+    font-size: 20px; 
+    padding-left: 10px; 
+    outline: lightgray; 
+    font-style: italic;
+} 
+
+h4 {
+    font-size: 20px;
+}
+
+#footer { 
+    margin-bottom: 0%; 
+    display: flex; 
+    width: 100%; 
+} 
+  
+#footer>button { 
+    width: 48%; 
+    padding: 1%; 
+    margin: 1%; 
+    background-color: lightgrey; 
+    border-radius: 5px; 
+    border-color: lightgray; 
+    font-size: large; 
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
