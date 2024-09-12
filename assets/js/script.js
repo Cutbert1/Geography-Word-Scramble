@@ -53,6 +53,12 @@ function check() {
             
 }
 
+document.getElementById("input").addEventListener("keydown", function(event){
+    if (event.key === "Enter"){
+        check()
+    }
+})
+
 /**
  * Get the current score from the DOM and increment it by 1
  */
@@ -76,6 +82,14 @@ function incrementWrongAnswer() {
 
 //Refresh and show new record
 function refresh() {
+
+    // keep input box empty when refresh
+    document.getElementById("input").value = " ";
+
+    //Set sursor to input box  when page is loaded- setting the focus
+    document.getElementById("input").focus();
+     
+    //Create random selection of countries with corresponding hints
     index = Math.floor(Math.random() * 41); 
     displayCountry = country[index]; 
     displayHint = hints[index]; 
