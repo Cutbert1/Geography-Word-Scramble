@@ -14,3 +14,29 @@ const hints = ["Trevi Fountain", "Eiffel Tower", "Great Wall", "Chichen Itza", "
 
 // Initialize display country with empty string
 let displayCountry = " ";
+
+// Call function to shuffle letters
+function shuffle(string) {
+    stringArray = Array.from(string)
+    for (let i = 0; i < strArray.length - 1; ++i);{
+        let j = Math.floor(Math.random() * stringArray.length);
+
+    // Switch letters
+    let temp = stringArray[i];
+    stringArray[i] = stringArray[j]; 
+        stringArray[j] = temp;
+
+    }
+    return stringArray.join(" ");
+
+}
+
+// Function to check input and display result
+function check() {
+    let input = document.getElementById("input");
+    let declaration = document.getElementById("declaration");
+    if (input.value.toLocaleLowerCase() === displayCountry.toLocaleLowerCase()
+    )
+        declaration.innerHTML = "Result: Correct";
+    else output.innerHTML = "Result: Incorrect";
+}
