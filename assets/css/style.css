@@ -47,23 +47,27 @@ h1 {
 h2 {
     font-size: 2rem;
     margin: auto;
-    padding: 50px 0;
     border-bottom: 4px dashed
 }
 
+#hint {
+    padding: 1%;
+}
 h3 {
     padding: 40px
 }
 
-input { 
+#input { 
     font-size: 20px; 
     padding-left: 10px; 
     outline: lightgray; 
     font-style: italic;
+    margin: 5px;
 } 
 
 h4 {
     font-size: 20px;
+    padding-top: 5%;
 }
 
 #footer { 
@@ -75,7 +79,7 @@ h4 {
 #footer>button { 
     width: 48%; 
     padding: 1%; 
-    margin: 1%; 
+    margin: 5%; 
     background-color: lightgrey; 
     border-radius: 5px; 
     border-color: lightgray; 

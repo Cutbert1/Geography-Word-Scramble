@@ -20,12 +20,12 @@ let displayCountry = " ";
 
 // Call function to shuffle letters
 function shuffle(str) {
-    strArray = Array.from(str)
+    let strArray = Array.from(str);
     for (let i = 0; i < strArray.length - 1; ++i); {
         let j = Math.floor(Math.random() * strArray.length);
 
     // Switch letters
-    var i
+    var i;
     let temp = strArray[i];
     strArray[i] = strArray[j]; 
         strArray[j] = temp;
@@ -39,12 +39,12 @@ function shuffle(str) {
 function check() {
     let input = document.getElementById("input");
     let declaration = document.getElementById("declaration");
-
-    if (input.value.toLocaleLowerCase() === displayCountry.toLocaleLowerCase()) {
+     
+    if (input.value.toLocaleLowerCase().trim() === displayCountry.toLocaleLowerCase()) {
         declaration.innerHTML = "Result: Correct";
-        alert("Fantastic, You Got It Right!!")
+        alert("Fantastic, You Got It Right!!");
         incrementScore();
-
+    
     } else{
         declaration.innerHTML = "Result: Incorrect";
         alert(`Hmmm...You answered ${input.value}. The correct answer is ${displayCountry}`);
@@ -55,9 +55,9 @@ function check() {
 
 document.getElementById("input").addEventListener("keydown", function(event){
     if (event.key === "Enter"){
-        check()
+        check();
     }
-})
+});
 
 /**
  * Get the current score from the DOM and increment it by 1
@@ -86,18 +86,19 @@ function refresh() {
     // keep input box empty when refresh
     document.getElementById("input").value = " ";
 
-    //Set sursor to input box  when page is loaded- setting the focus
+    //Set cursor to input box  when page is loaded- setting the focus
     document.getElementById("input").focus();
      
     //Create random selection of countries with corresponding hints
-    index = Math.floor(Math.random() * 41); 
+    let index = Math.floor(Math.random() * 41);
+    let displayHint = hints[index]; 
+    let scrambleWord = document.getElementById("scrambleWord");
+     
     displayCountry = country[index]; 
-    displayHint = hints[index]; 
-    scrambleWord = document.getElementById("scrambleWord");
     scrambleWord.innerText = shuffle(displayCountry).toUpperCase();
 
     let hint = document.getElementById("hint");
-    hint.innerHTML = "<b>Hint</b>:" + displayHint;
+    hint.innerHTML = "<b>Hint </b>:" + displayHint;
     document.getElementById("declaration").innerText = "Result:";
 
 }
