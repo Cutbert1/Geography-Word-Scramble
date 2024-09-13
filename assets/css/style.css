@@ -1,3 +1,4 @@
+
  /* Asterisk wildcard selector to overide default styles added by the browser */
  * {
     margin: 0;
@@ -60,8 +61,7 @@ h3 {
 #input { 
     font-size: 20px; 
     padding-left: 10px; 
-    outline: lightgray; 
-    font-style: italic;
+    outline: gray; 
     margin: 5px;
 } 
 

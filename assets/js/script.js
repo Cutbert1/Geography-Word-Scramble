@@ -1,3 +1,4 @@
+
 // country Array
 
 const country = ["japan", "italy", "france", "china", "mexico", "india", "egypt", "peru", "brazil", 
@@ -6,7 +7,7 @@ const country = ["japan", "italy", "france", "china", "mexico", "india", "egypt"
     "thailand", "ecuador", "zambia", "nepal", "russia", "south africa", "portugal", "Singapore", 
     "canada", "vietnam", "hong kong", "taiwan", "irland", "malaysia", "switzerland", "scotland", "indonesia", "belguim"];
 
-// hints list Array
+// hints  Array
 const hints = ["Fushimi Inari Taisha", "Colosseum", "Eiffel Tower", "Great Wall", "Chichen Itza", "Taj Mahal",
      "Pyramids of Giza", "Machu Picchu", "Christ the Redeemer", "Acropolis", "Petra", "The Brandenburg Gate", 
      "The Golden Gate Bridge", "The Blue Mosque", "Baalbek", "Plitvice Lakes National Park", "Kilimanjaro", "Perito Moreno Glacier", 
@@ -18,22 +19,25 @@ const hints = ["Fushimi Inari Taisha", "Colosseum", "Eiffel Tower", "Great Wall"
 // Initialize display country with empty string
 let displayCountry = " ";
 
-// Call function to shuffle letters
-function shuffle(str) {
-    let strArray = Array.from(str);
-    for (let i = 0; i < strArray.length - 1; ++i); {
-        let j = Math.floor(Math.random() * strArray.length);
-
-    // Switch letters
-    var i;
-    let temp = strArray[i];
-    strArray[i] = strArray[j]; 
-        strArray[j] = temp;
-
-    }
-    return strArray.join(" ");
-
-}
+// Shuffle letters Function
+function getRandomInt(n) {
+    return Math.floor(Math.random() * n);
+  }
+  function shuffle(str) {
+    let arr = str.split('');           
+    let n = arr.length;              
+    
+    for(let i=0 ; i< n-1 ; ++i) {
+      let j = getRandomInt(arr.length);       
+      
+      let temp = arr[i];             
+      arr[i] = arr[j];
+      arr[j] = temp;
+    } 
+    str = arr.join('');                
+    return str;                        
+  }
+  
 
 // Function to check input and display result
 function check() {
@@ -52,7 +56,7 @@ function check() {
     } 
             
 }
-
+// Event listener for keydown Enter
 document.getElementById("input").addEventListener("keydown", function(event){
     if (event.key === "Enter"){
         check();
