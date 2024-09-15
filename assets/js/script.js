@@ -103,7 +103,6 @@ function refresh() {
     let hint = document.getElementById("hint");
     hint.innerHTML = "<b>Hint </b>:" + displayHint;
     document.getElementById("declaration").innerText = "Result:";
-
 }
 
 // Function call when page load for first time 
