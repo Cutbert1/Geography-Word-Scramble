@@ -70,7 +70,6 @@ function incrementScore() {
 
     let initialScore = (document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++initialScore;
-
 }
 
 /**
