@@ -149,15 +149,32 @@ function refresh() {
 |Key Features|   User Value   |Functionality Test|Outcome|
 |:------------|:----------------|:-------------|:------------|
 |Word Shuffle|Provides user with a shuffled  country name the enable the user have a thought of what landmarks matches with shuffled word and try to decipher the corrected answer|Step through the code and ensure words are shuffled as expected|Country names are being shuffled as expected . For example below screen shut “Turkey” which has been shuffled to “RYETKU”. ![shuffle](./assets/readme-images/manual-test-images/features-test-images/shuffle.jpg)|
-|Hint|Provides name of iconic landmark to assist user think to decipher which country the landmark is located|Step through the code and ensure hint corresponded with shuffled country name|Confirmed that hint provided on the example below “The Blue Mosque” matches “Turkey”  which the correct answer. ![hints](./assets/readme-images/manual-test-images/features-test-images/hints.jpg)|
+|Hint|Provides name of iconic landmark to assist user think to decipher which country the landmark is located|Step through the code and ensure hint corresponded with shuffled country name|Confirmed that hint provided on the example below “The Blue Mosque” matches “Turkey”  which is the correct answer. ![hints](./assets/readme-images/manual-test-images/features-test-images/hints.jpg)|
 |Input box|Used by user to input answer to the game|Step through the code and ensure is empty and listen to events.eg. “enter keydown”|Confirmed letters can be typed on input box  and “enter” keydown checks answer. ![input-boxft](./assets/readme-images/manual-test-images/features-test-images/input-boxft.jpg)|
 |Check Answer Correct and Incorrect Alert|Helps users r to know if they have gotten the correct answer with reference to their input|Step through the code and ensure input is equals to display country, if true alert correct answer, else alert incorrect answer|Confirmed that when input is equals to displayed country correct answer alert is displayed if not incorrect answer alert is displayed. ![correct-answerft](./assets/readme-images/manual-test-images/features-test-images/correct-answerft.jpg) ![incorrect-answerft](./assets/readme-images/manual-test-images/features-test-images/incorrect-answerft.jpg)|
 |Score Count|Tallies the incorrect and correct answers for the user|Step through the code and ensure increment correct and incorrect functions are increased by 1 depending input of the user. Enter correct and incorrect answers on the game and count correct or incorrect answered.|Confirmed by playing the game and counting the number of correct and incorrect answered. ![score-countft](./assets/readme-images/manual-test-images/features-test-images/score-countft.jpg)|
 |Refresh|Allows the user to refresh for new records of hints and shuffled country name with empty input box and cursor focused on input box|While playing the game, after checking answer, click refresh |Confirmed, on clicking refresh, new records are displayed with empty input box and cursor focused on input box. ![refresh-ft](./assets/readme-images/manual-test-images/features-test-images/refresh-ft.jpg)|
 
 ### Features Test Result Compilation
+|Key Features|   Test Case  |Outcome|
+|:------------|:----------------|:-------------|
 ### Lighthouse Performance
+Confirmation that colors, font etc chosen are easy to read and accessible by running the site through lighthouse devtool
+|View Tested|   Outcome of the audit  |Soulution Applied|Screenshot of clear Validator output|
+|:------------|:----------------|:-------------|:------------|
+|Mobile|![lighthouse-mobile](./assets/readme-images/manual-test-images/Lighthouse-test-images/mobile-lh.jpg)|No solution required perfomance is 99%|N/A|
+|Desktop|![lighthouse-desktop](./assets/readme-images/manual-test-images/Lighthouse-test-images/desktop-lh.jpg)|No solution required perfomance is 100%|N/A|
+
 ### Validation Testing
+* Used [JSHint](https://jshint.com/) to validate JavScript
+* Used [W3C HTML](https://validator.w3.org/) to validate HTML
+* Used [W3C CSS Jigsaw](https://jigsaw.w3.org/css-validator/) to validate CSS
+
+|Script Tested|Screenshot of Errors and Warnings   |Solution Applied|Screenshot of Validation Output|
+|:------------|:----------------|:-------------|:------------|
+|HTML|No error or warning|N/A|![html-vl](./assets/readme-images/manual-test-images/validation-test-images/html-vl.jpg)|
+|CSS|No error or warning|N/A|![css-vl](./assets/readme-images/manual-test-images/validation-test-images/css-vl.jpg)|
+|JavaScript|No error 17 warnings about using ES6 version|N/A|![js-vl](./assets/readme-images/manual-test-images/validation-test-images/js-vl.jpg)|
 ### Browser compatibility
 ### Screen sizes Responsiveness 
 ### Pages Responsivnes
