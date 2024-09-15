@@ -162,8 +162,8 @@ function refresh() {
 Confirmation that colors, font etc chosen are easy to read and accessible by running the site through lighthouse devtool
 |View Tested|   Outcome of the audit  |Soulution Applied|Screenshot of clear Validator output|
 |:------------|:----------------|:-------------|:------------|
-|Mobile|![lighthouse-mobile](./assets/readme-images/manual-test-images/Lighthouse-test-images/mobile-lh.jpg)|No solution required perfomance is 99%|N/A|
-|Desktop|![lighthouse-desktop](./assets/readme-images/manual-test-images/Lighthouse-test-images/desktop-lh.jpg)|No solution required perfomance is 100%|N/A|
+|Mobile|![lighthouse-mobile](./assets/readme-images/lighthouse-test-images/mobile-lh.jpg)|No solution required perfomance is 99%|N/A|
+|Desktop|![lighthouse-desktop](./assets/readme-images/lighthouse-test-images/desktop-lh.jpg)|No solution required perfomance is 100%|N/A|
 
 ### Validation Testing
 * Used [JSHint](https://jshint.com/) to validate JavScript
@@ -172,12 +172,24 @@ Confirmation that colors, font etc chosen are easy to read and accessible by run
 
 |Script Tested|Screenshot of Errors and Warnings   |Solution Applied|Screenshot of Validation Output|
 |:------------|:----------------|:-------------|:------------|
-|HTML|No error or warning|N/A|![html-vl](./assets/readme-images/manual-test-images/validation-test-images/html-vl.jpg)|
-|CSS|No error or warning|N/A|![css-vl](./assets/readme-images/manual-test-images/validation-test-images/css-vl.jpg)|
-|JavaScript|No error 17 warnings about using ES6 version|N/A|![js-vl](./assets/readme-images/manual-test-images/validation-test-images/js-vl.jpg)|
+|HTML|No error or warning|N/A|![html-vl](./assets/readme-images/validation-test-images/html-vl.jpg)|
+|CSS|No error or warning|N/A|![css-vl](./assets/readme-images/validation-test-images/css-vl.jpg)|
+|JavaScript|No error 17 warnings about using ES6 version of JSHint|N/A|![js-vl](./assets/readme-images/validation-test-images/js-vl.jpg)|
 ### Browser compatibility
+Confirmed that site displays consistently in tested browser and functionalities worked as expected.
+|Browser Tested|Functionality Tested|Visual Consistency|Outcome|
+|:------------:|:----------------:|:-------------:|:-------------:|
+|![chrome](./assets/readme-images/browser-compatibility-test/chrome.png)|Check Answer button, Refresh button, Alerts, Word Shuffle, Hints|Layout, design, content display consistency |Intended appearance and responsiveness is good|
+|![firefox](./assets/readme-images/browser-compatibility-test/firefox.png)|Check Answer button, Refresh button, Alerts, Word Shuffle, Hints|Layout, design, content display consistency |Intended appearance and responsiveness is good|
+|![edge](./assets/readme-images/browser-compatibility-test/edge.png)|Check Answer button, Refresh button, Alerts, Word Shuffle, Hints|Layout, design, content display consistency |Intended appearance and responsiveness is good|
 ### Screen sizes Responsiveness 
-### Pages Responsivnes
+![screen-size-responsivenes](./assets/readme-images/responsive-test/screen%20size%20responsiveness.jpg)
+|Device Tested|Site responsive >=700px |Site responsive <699px|Render as expected|
+|:------------:|:----------------:|:-------------:|:--------------:|
+|iPhone 12 Pro (Mobile)|NA|Good|Good 390px X 844px ![mobile](./assets/readme-images/responsive-test/mobile.jpg)|
+|iPad Mini (Tablet)|Good|N/A|Good 768px X 1024px ![tablet](./assets/readme-images/responsive-test/tablet.jpg)|
+|iPad Air (Laptop)|Good|N/A|Good 820px X 1180px ![laptop](./assets/readme-images/responsive-test/laptop.jpg)|
+|Nest Hub Max (Desktop)|Good|N/A|Good 1280px X 800px ![desktop](./assets/readme-images/responsive-test/desktop.jpg)|
 ### Accessibility
 ## Technologies Used
 ### Languages Used
