@@ -52,7 +52,7 @@ function check() {
     } else{
         declaration.innerHTML = "Result: Incorrect";
         alert(`Hmmm...You answered ${input.value}. The correct answer is ${displayCountry}`);
-        incrementWrongAnswer();
+        incrementIncorrectAnswer();
     } 
             
 }
@@ -75,7 +75,7 @@ function incrementScore() {
 /**
  * Get the current tally of incorrect answers from the DOM and increment it by 1
  */
-function incrementWrongAnswer() {
+function incrementIncorrectAnswer() {
 
     let initialScore = (document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++initialScore;
