@@ -149,15 +149,12 @@ function refresh() {
 |Key Features|   User Value   |Functionality Test|Outcome|
 |:------------|:----------------|:-------------|:------------|
 |Word Shuffle|Provides user with a shuffled  country name the enable the user have a thought of what landmarks matches with shuffled word and try to decipher the corrected answer|Step through the code and ensure words are shuffled as expected|Country names are being shuffled as expected . For example below screen shut “Turkey” which has been shuffled to “RYETKU”. ![shuffle](./assets/readme-images/manual-test-images/features-test-images/shuffle.jpg)|
-|Hint|Provides name of iconic landmark to assist user think to decipher which country the landmark is located|Step through the code and ensure hint corresponded with shuffled country name|Confirmed that hint provided on the example below “The Blue Mosque” matches “Turkey”  which is the correct answer. ![hints](./assets/readme-images/manual-test-images/features-test-images/hints.jpg)|
+|Hint|Provides name of iconic landmark to assist user to think and decipher which country the landmark is located|Step through the code and ensure hint corresponded with shuffled country name|Confirmed that hint provided on the example below “The Blue Mosque” matches “Turkey”  which is the correct answer. ![hints](./assets/readme-images/manual-test-images/features-test-images/hints.jpg)|
 |Input box|Used by user to input answer to the game|Step through the code and ensure is empty and listen to events.eg. “enter keydown”|Confirmed letters can be typed on input box  and “enter” keydown checks answer. ![input-boxft](./assets/readme-images/manual-test-images/features-test-images/input-boxft.jpg)|
 |Check Answer Correct and Incorrect Alert|Helps users r to know if they have gotten the correct answer with reference to their input|Step through the code and ensure input is equals to display country, if true alert correct answer, else alert incorrect answer|Confirmed that when input is equals to displayed country correct answer alert is displayed if not incorrect answer alert is displayed. ![correct-answerft](./assets/readme-images/manual-test-images/features-test-images/correct-answerft.jpg) ![incorrect-answerft](./assets/readme-images/manual-test-images/features-test-images/incorrect-answerft.jpg)|
 |Score Count|Tallies the incorrect and correct answers for the user|Step through the code and ensure increment correct and incorrect functions are increased by 1 depending input of the user. Enter correct and incorrect answers on the game and count correct or incorrect answered.|Confirmed by playing the game and counting the number of correct and incorrect answered. ![score-countft](./assets/readme-images/manual-test-images/features-test-images/score-countft.jpg)|
 |Refresh|Allows the user to refresh for new records of hints and shuffled country name with empty input box and cursor focused on input box|While playing the game, after checking answer, click refresh |Confirmed, on clicking refresh, new records are displayed with empty input box and cursor focused on input box. ![refresh-ft](./assets/readme-images/manual-test-images/features-test-images/refresh-ft.jpg)|
 
-### Features Test Result Compilation
-|Key Features|   Test Case  |Outcome|
-|:------------|:----------------|:-------------|
 ### Lighthouse Performance
 Confirmation that colors, font etc chosen are easy to read and accessible by running the site through lighthouse devtool
 |View Tested|   Outcome of the audit  |Soulution Applied|Screenshot of clear Validator output|
@@ -174,7 +171,7 @@ Confirmation that colors, font etc chosen are easy to read and accessible by run
 |:------------|:----------------|:-------------|:------------|
 |HTML|No error or warning|N/A|![html-vl](./assets/readme-images/validation-test-images/html-vl.jpg)|
 |CSS|No error or warning|N/A|![css-vl](./assets/readme-images/validation-test-images/css-vl.jpg)|
-|JavaScript|No error 17 warnings about using ES6 version of JSHint|N/A|![js-vl](./assets/readme-images/validation-test-images/js-vl.jpg)|
+|JavaScript|No error, 17 warnings about using ES6 version of JSHint|N/A|![js-vl](./assets/readme-images/validation-test-images/js-vl.jpg)|
 ### Browser compatibility
 Confirmed that site displays consistently in tested browser and functionalities worked as expected.
 |Browser Tested|Functionality Tested|Visual Consistency|Outcome|
@@ -193,13 +190,35 @@ Confirmed that site displays consistently in tested browser and functionalities 
 ### Accessibility
 ## Technologies Used
 ### Languages Used
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)  
+* [CSS](https://en.wikipedia.org/wiki/CSS) 
+
 ## Bugs
 #### Bugs Resolved
+|Bug|   Description |Solution Applied|Result|
+|:------------|:----------------|:-------------|:------------|
+|White space on input box|Due to white space on input box correct answer was interpreted as incorrect answer, hence incorrect answer alert even when the answer is correct. ![bug](./assets/readme-images/bugs-images/bug-tr.jpg)|Used  trim() function to trim the white space on the input|Bug resolved ![bug-fix](./assets/readme-images/bugs-images/bug-fix.jpg)|
 #### Bugs Unresolved
+No unresolved bugs
 ### Libraries
+* [Google Fonts](https://fonts.google.com/) fonts were used to generate Raleway font link embedded into index.html file.
+* [GitHub](https://github.com/)  is used to store the projects code after being pushed from [Gitpod](https://codeinstitute-ide.net/new) were the work station is created.
+* Windows photo editor was used to resize images
 ## Deployment
+The project was deployed to GitHub Pages using the following steps..
+1.	Log in to GitHub and locate [my repository](https://github.com/Cutbert1/Geography-Word-Scramble) 
+2.	At the top of the Repository (not top of page), locate the **Settings** Button on the menu.
+3.	Scroll down the Settings until you locate the **Pages**, then click.
+4.	In the **Build and Deployment**, select **main branch** and ensure the folder is set to **root folder** and click **save**
+5.	Return to code tab of GitHub repo. Delay for few minutes to enable the build finish, then refresh  the page. 
+6.	Check deployment section on the code page (right hand side bar)
+7.	Click **github-pages** to see the live URL
 ## Credits
 ### Codes
+Code Institute [Love Maths Project](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master/01-putting-the-basics-in-place/01-getting-set-up)
 ### Tutorials
-### Photos
-### Text Content
+* Code Institute JavaScript Essentials Programme 
+* Tutor Support  
+* Mentor   
+* [stackoverflow](https://stackoverflow.com/questions/23739224/empty-heading-warning-on-html5-validation)
