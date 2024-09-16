@@ -1,20 +1,23 @@
-
 // country Array
-
-const country = ["japan", "italy", "france", "china", "mexico", "india", "egypt", "peru", "brazil", 
-    "greece", "jordan", "germany", "united states of america", "turkey", "lebanon", "croatia", "tanzania", 
-    "argentina", "cambodia", "australia", "spain", "untited arab emirate", "england", 
-    "thailand", "ecuador", "zambia", "nepal", "russia", "south africa", "portugal", "Singapore", 
-    "canada", "vietnam", "hong kong", "taiwan", "irland", "malaysia", "switzerland", "scotland", "indonesia", "belguim"];
+const country = ["Japan", "Italy", "Namibia", "France", "China", "Mexico", "India", "Bolivia", "Pakistan", "Egypt", "Peru", "Brazil", "Morocco", "South Korea",
+    "Greece", "Jordan", "Germany", "French Guiana", "United States of America", "Kenya", "Turkey", "Lebanon", "Croatia", "Tanzania", "Slovenia", "Sri Lanka",
+    "Argentina", "Cambodia", "Australia", "Spain", "Untited Arab Emirate", "England", "Austria", "Iceland", "Philippines", "Czech Republic", "Guyana", "Bhutan",
+    "Thailand", "Ecuador", "Zambia", "Nepal", "Russia", "South Africa", "Portugal", "Chile", "Venezuela", "Singapore", "Netherlands", "Sweden", "Albania", "Tibet", "Romania",
+    "Canada", "Vietnam", "Hong Kong", "Botswana", "Taiwan", "Irland", "Turqmenistan", "Malaysia", "Switzerland", "Myanmar", "Scotland", "Indonesia", 
+    "Belguim", "Madagascar", "Colombia", "Suriname", "Kazakhstan", "Iran"
+];
 
 // hints  Array
-const hints = ["Fushimi Inari Taisha", "Colosseum", "Eiffel Tower", "Great Wall", "Chichen Itza", "Taj Mahal",
-     "Pyramids of Giza", "Machu Picchu", "Christ the Redeemer", "Acropolis", "Petra", "The Brandenburg Gate", 
-     "The Golden Gate Bridge", "The Blue Mosque", "Baalbek", "Plitvice Lakes National Park", "Kilimanjaro", "Perito Moreno Glacier", 
-     "Angkor Wat Temple Complex", "Great Barrier Reef", "Sagrada Familia", "Burj Khalifa", "Big Ben", "The Grand Palace", 
-     "The Galapagos Islands", "Victoria Falls", "Mount Everest", "Red Square", "Table Mountain", "Dom Luis Bridge", 
-     "Gardens by the Bay", "Niagara Falls" ,"Ha Long Bay", "Tian Tan Buddha", "Taipei 101", "Cliffs of Moher", 
-     "Petronas Twin Towers", "Chapel Bridge", "Edinburgh Castle", "Mount Bromo", "Atomium"];
+const hints = ["Fushimi Inari Taisha", "Colosseum", "Fish River Canyon", "Eiffel Tower", "Great Wall", "Chichen Itza", "Taj Mahal", "Lake Titicaca", "Badshahi Mosque",
+    "Pyramids of Giza", "Machu Picchu", "Christ the Redeemer", "Sahara Desert", "Gyeongbokgung Palace", "Acropolis", "Petra", "The Brandenburg Gate", "Salvation Islands",
+    "The Golden Gate Bridge", "Masai Mara National Park", "The Blue Mosque", "Baalbek", "Plitvice Lakes National Park", "Kilimanjaro", "Lake Bled", "Sigiriya Lion Rock", 
+    "Perito Moreno Glacier","Angkor Wat Temple Complex", "Great Barrier Reef", "Sagrada Familia", "Burj Khalifa", "Big Ben", "Schönbrunn Palace", "Sun Voyager", 
+    "The Chocolate Hills", "Prague Castle", "Kaieteur National Park", "Tiger Nest", "The Grand Palace", "The Galapagos Islands", "Victoria Falls", "Mount Everest", "Red Square", 
+    "Table Mountain", "Dom Luis Bridge", "Easter Island", "Angel Falls", "Gardens by the Bay", "Anne Frank House", "Gamla Stan", "Pyramid of Tirana", "Potala Palace",
+    "Fortified Churches of Transylvania", "Niagara Falls", "Ha Long Bay", "Tian Tan Buddha", "Makgadikgadi Pans", "Taipei 101", "Cliffs of Moher", "Darvaza Gas Crater",
+    "Petronas Twin Towers", "Chapel Bridge", "Shwedagon Pagoda", "Edinburgh Castle", "Mount Bromo", "Atomium", "Avenue of the Baobabs", "Cartagena", "Fort Zeelandia", 
+    "Baiterek Monument", "Shah Mosque"
+];
 
 // Initialize display country with empty string
 let displayCountry = " ";
@@ -22,43 +25,44 @@ let displayCountry = " ";
 // Shuffle letters Function
 function getRandomInt(n) {
     return Math.floor(Math.random() * n);
-  }
-  function shuffle(str) {
-    let arr = str.split('');           
-    let n = arr.length;              
-    
-    for(let i=0 ; i< n-1 ; ++i) {
-      let j = getRandomInt(arr.length);       
-      
-      let temp = arr[i];             
-      arr[i] = arr[j];
-      arr[j] = temp;
-    } 
-    str = arr.join('');                
-    return str;                        
-  }
-  
+}
+
+function shuffle(str) {
+    let arr = str.split('');
+    let n = arr.length;
+
+    for (let i = 0; i < n - 1; ++i) {
+        let j = getRandomInt(arr.length);
+
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    str = arr.join('');
+    return str;
+}
+
 
 // Function to check input and display result
 function check() {
     let input = document.getElementById("input");
     let declaration = document.getElementById("declaration");
-     
+
     if (input.value.toLocaleLowerCase().trim() === displayCountry.toLocaleLowerCase()) {
         declaration.innerHTML = "Result: Correct";
         alert("Fantastic, You Got It Right!!");
         incrementScore();
-    
-    } else{
+
+    } else {
         declaration.innerHTML = "Result: Incorrect";
         alert(`Hmmm...You answered ${input.value}. The correct answer is ${displayCountry}`);
         incrementIncorrectAnswer();
-    } 
-            
+    }
+
 }
 // Event listener for keydown Enter
-document.getElementById("input").addEventListener("keydown", function(event){
-    if (event.key === "Enter"){
+document.getElementById("input").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
         check();
     }
 });
@@ -91,13 +95,13 @@ function refresh() {
 
     //Set cursor to input box  when page is loaded- setting the focus
     document.getElementById("input").focus();
-     
+
     //Create random selection of countries with corresponding hints
-    let index = Math.floor(Math.random() * 41);
-    let displayHint = hints[index]; 
+    let index = Math.floor(Math.random() * 71);
+    let displayHint = hints[index];
     let scrambleWord = document.getElementById("scrambleWord");
-     
-    displayCountry = country[index]; 
+
+    displayCountry = country[index];
     scrambleWord.innerText = shuffle(displayCountry).toUpperCase();
 
     let hint = document.getElementById("hint");
