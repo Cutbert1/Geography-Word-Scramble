@@ -11,7 +11,6 @@ Primary  user demography are school-age children to improve knowledge of geograp
 #### Colour Scheme
 #### Topograhy
 The Raleway font is used  all through the website. Sans Serif is used as the backup font for any reason the font isn't being imported into the site properly.
-#### Imagery
 ## Features
 ### Existing Features
 #### Title and  Header
@@ -48,7 +47,7 @@ function getRandomInt(n) {
     return str;                        
   }
 ```
-![shuffle](./assets/readme-images/features-images/scrambleword.jpg)
+![shuffle](./assets/readme-images/features-images/scrambledword.jpg)
 #### Hint
 This is used to display const hint with matches the displayed random shuffled selected country name.
 ```js
@@ -68,7 +67,8 @@ This is used to display const hint with matches the displayed random shuffled se
 Input box provided for user to type in answer before checking result.
 ```html
  <div class="form">
-    <input id="input" type="text">
+    <label for="Country">Country</label>
+    <input id="input" type="text" required>
  </div>
 ```
 ![input-box](./assets/readme-images/features-images/input-box.jpg)
@@ -144,6 +144,7 @@ function refresh() {
 ```
 ![refresh](./assets/readme-images/features-images/refresh.jpg)
 #### Future features Improvement
+Future improvement can be to add City, match city, country to hint and ensure city name is shuffled. Have two inputs for country and city. Score two points when user gets both correct and one point when user gets one correct.
 ## Manual Testing
 ### Features Testing
 |Key Features|   User Value   |Functionality Test|Outcome|
