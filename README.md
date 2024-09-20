@@ -27,25 +27,26 @@ Located at the top of the page that clearly states  the game name  and subsequen
 ![title and header](./assets/readme-images/features-images/header.jpg)
  
 #### Word Shuffle
-The letters of country names that corresponds with the hint are shuffled. Using the code and to make is simpler for school-aged, the country names are shuffles without omitting any letter.
+The letters of country names that corresponds with the hint are shuffled. Using the code and to make it simpler for school-aged children, the country names are shuffles without omitting any letter.
 ```js
 function getRandomInt(n) {
     return Math.floor(Math.random() * n);
-  }
-  function shuffle(str) {
-    let arr = str.split('');           
-    let n = arr.length;              
-    
-    for(let i=0 ; i< n-1 ; ++i) {
-      let j = getRandomInt(arr.length);       
-      
-      let temp = arr[i];             
-      arr[i] = arr[j];
-      arr[j] = temp;
-    } 
-    str = arr.join('');                
-    return str;                        
-  }
+}
+
+function shuffle(str) {
+    let array = str.split("");
+    let n = array.length;
+
+    for (let i = 0; i < n - 1; ++i) {
+        let j = getRandomInt(array.length);
+
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    str = array.join("");
+    return str;
+}                    
 ```
 ![shuffle](./assets/readme-images/features-images/scrambledword.jpg)
 #### Hint

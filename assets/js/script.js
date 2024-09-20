@@ -28,20 +28,19 @@ function getRandomInt(n) {
 }
 
 function shuffle(str) {
-    let arr = str.split('');
-    let n = arr.length;
+    let array = str.split("");
+    let n = array.length;
 
     for (let i = 0; i < n - 1; ++i) {
-        let j = getRandomInt(arr.length);
+        let j = getRandomInt(array.length);
 
-        let temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
-    str = arr.join('');
+    str = array.join("");
     return str;
 }
-
 
 // Function to check input and display result
 function check() {
@@ -56,10 +55,12 @@ function check() {
     } else {
         declaration.innerHTML = "Result: Incorrect";
         alert(`Hmmm...You answered ${input.value}. The correct answer is ${displayCountry}`);
-        incrementIncorrectAnswer();
+        incrementIncorrectAnswer(); 
     }
-
+       
 }
+
+
 // Event listener for keydown Enter
 document.getElementById("input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
