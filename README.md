@@ -67,10 +67,10 @@ This is used to display const hint with matches the displayed random shuffled se
 #### Imput box
 Input box provided for user to type in answer before checking result.
 ```html
- <div class="form">
-    <label for="country">Country</label>
+<div class="form">
+    <label for="input">Country</label>
     <input id="input" type="text" required>
- </div>
+</div>
 ```
 ![input-box](./assets/readme-images/features-images/input-box.jpg)
 #### Check Answer | Correct and Incorrect Alert
@@ -189,7 +189,6 @@ Confirmed that site displays consistently in tested browser and functionalities 
 |iPad Mini (Tablet)|Good|N/A|Good 768px X 1024px ![tablet](./assets/readme-images/responsive-test/tablet.jpg)|
 |iPad Air (Laptop)|Good|N/A|Good 820px X 1180px ![laptop](./assets/readme-images/responsive-test/laptop.jpg)|
 |Nest Hub Max (Desktop)|Good|N/A|Good 1280px X 800px ![desktop](./assets/readme-images/responsive-test/desktop.jpg)|
-### Accessibility
 ## Technologies Used
 ### Languages Used
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
@@ -204,7 +203,7 @@ Confirmed that site displays consistently in tested browser and functionalities 
 #### Bugs Unresolved
 No unresolved bugs
 ### Libraries
-* [Google Fonts](https://fonts.google.com/) fonts were used to generate Raleway font link embedded into index.html file.
+* [Google Fonts](https://fonts.google.com/) were used to generate Raleway font link embedded into index.html file.
 * [GitHub](https://github.com/)  is used to store the projects code after being pushed from [Gitpod](https://codeinstitute-ide.net/new) were the work station is created.
 * Windows photo editor was used to resize images
 ## Deployment
@@ -221,6 +220,7 @@ The project was deployed to GitHub Pages using the following steps..
 Code Institute [Love Maths Project](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master/01-putting-the-basics-in-place/01-getting-set-up)
 ### Tutorials
 * Code Institute JavaScript Essentials Programme 
-* Tutor Support  
-* Mentor   
+* Tutor Support    
 * [stackoverflow](https://stackoverflow.com/questions/23739224/empty-heading-warning-on-html5-validation)
+* [geeksforgeeks](https://www.geeksforgeeks.org/)
+* [the world pursuit.com](https://theworldpursuit.com/famous-landmarks-in-the-world/)

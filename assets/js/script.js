@@ -1,10 +1,10 @@
 // country Array
 const country = ["Japan", "Italy", "Namibia", "France", "China", "Mexico", "India", "Bolivia", "Pakistan", "Egypt", "Peru", "Brazil", "Morocco", "South Korea",
     "Greece", "Jordan", "Germany", "French Guiana", "United States of America", "Kenya", "Turkey", "Lebanon", "Croatia", "Tanzania", "Slovenia", "Sri Lanka",
-    "Argentina", "Cambodia", "Australia", "Spain", "Untited Arab Emirate", "England", "Austria", "Iceland", "Philippines", "Czech Republic", "Guyana", "Bhutan",
+    "Argentina", "Cambodia", "Australia", "Spain", "United Arab Emirate", "England", "Austria", "Iceland", "Philippines", "Czech Republic", "Guyana", "Bhutan",
     "Thailand", "Ecuador", "Zambia", "Nepal", "Russia", "South Africa", "Portugal", "Chile", "Venezuela", "Singapore", "Netherlands", "Sweden", "Albania", "Tibet", "Romania",
-    "Canada", "Vietnam", "Hong Kong", "Botswana", "Taiwan", "Irland", "Turqmenistan", "Malaysia", "Switzerland", "Myanmar", "Scotland", "Indonesia", 
-    "Belguim", "Madagascar", "Colombia", "Suriname", "Kazakhstan", "Iran"
+    "Canada", "Vietnam", "Hong Kong", "Botswana", "Taiwan", "Ireland", "Turkmenistan", "Malaysia", "Switzerland", "Myanmar", "Scotland", "Indonesia", 
+    "Belgium", "Madagascar", "Colombia", "Suriname", "Kazakhstan", "Iran"
 ];
 
 // hints  Array
