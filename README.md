@@ -79,17 +79,18 @@ When a user click “check answer” a correct or incorrect answer alert display
 function check() {
     let input = document.getElementById("input");
     let declaration = document.getElementById("declaration");
-     
+
     if (input.value.toLocaleLowerCase().trim() === displayCountry.toLocaleLowerCase()) {
         declaration.innerHTML = "Result: Correct";
         alert("Fantastic, You Got It Right!!");
         incrementScore();
-    
-    } else{
+
+    } else {
         declaration.innerHTML = "Result: Incorrect";
         alert(`Hmmm...You answered ${input.value}. The correct answer is ${displayCountry}`);
-        incrementIncorrectAnswer();
-    }            
+        incrementIncorrectAnswer(); 
+    } 
+    setTimeout(refresh, 2000)  
 }
 ```
 ![correct-answer](./assets/readme-images/features-images/check%20answer-correct.jpg)
@@ -97,6 +98,7 @@ function check() {
 #### Result
 Once “ok” is clicked on the alert correct or incorrect is displayed on the Result tab.
 ![result](./assets/readme-images/features-images/result.jpg)
+![resul](./assets/readme-images/features-images/resul.jpg)
 #### Score Count
 Calculate the total number of correct and incorrect answers as the user progress with the game. 
 ```js
@@ -119,8 +121,8 @@ function incrementIncorrectAnswer() {
 }
 ```
 ![score-count](./assets/readme-images/features-images/score-count.jpg)
-#### Refresh
-This button refreshes and presents new records after answer is checked, ensures the input box is empty and cursor set at input box.
+#### Refresh function
+This function automatically refreshes and presents new records 2' after answer is checked (check()), ensures the input box is empty and cursor set at input box.
 ```js
 function refresh() {
 
@@ -145,7 +147,7 @@ function refresh() {
 ```
 ![refresh](./assets/readme-images/features-images/refresh.jpg)
 #### Future features Improvement
-Future improvement can be to add City, match city, country to hint and ensure city name is shuffled. Have two inputs for country and city. Score two points when user gets both correct and one point when user gets one correct.
+* Future improvement is to add City, match city, country to hint and ensure city name is shuffled. Have two inputs for country and city. Score two points when user gets both correct and one point when user gets one correct.
 ## Manual Testing
 ### Features Testing
 |Key Features|   User Value   |Functionality Test|Outcome|
@@ -155,7 +157,7 @@ Future improvement can be to add City, match city, country to hint and ensure ci
 |Input box|Used by user to input answer to the game|Step through the code and ensure is empty and listen to events.eg. “enter keydown”|Confirmed letters can be typed on input box  and “enter” keydown checks answer. ![input-boxft](./assets/readme-images/manual-test-images/features-test-images/input-boxft.jpg)|
 |Check Answer Correct and Incorrect Alert|Helps users to know if they have gotten the correct answer with reference to their input|Step through the code and ensure input is strictly equal to display country, if true alert correct answer, else alert incorrect answer|Confirmed that when input is strictly equal to displayed country correct answer alert is displayed if not incorrect answer alert is displayed. ![correct-answerft](./assets/readme-images/manual-test-images/features-test-images/correct-answerft.jpg) ![incorrect-answerft](./assets/readme-images/manual-test-images/features-test-images/incorrect-answerft.jpg)|
 |Score Count|Tallies the incorrect and correct answers for the user|Step through the code and ensure increment correct and incorrect functions are increased by 1 depending input of the user. Enter correct and incorrect answers on the game and count correct or incorrect answered.|Confirmed by playing the game and counting the number of correct and incorrect answered. ![score-countft](./assets/readme-images/manual-test-images/features-test-images/score-countft.jpg)|
-|Refresh|Allows the user to refresh for new records of hints and shuffled country name with empty input box and cursor focused on input box|While playing the game, after checking answer, click refresh |Confirmed, on clicking refresh, new records are displayed with empty input box and cursor focused on input box. ![refresh-ft](./assets/readme-images/manual-test-images/features-test-images/refresh-ft.jpg)|
+|Auto Refresh| Refreshes for new records of hints and shuffled country name with empty input box and cursor focused on input box after 2'|While playing the game, after checking answer, click refresh |Confirmed, new records are displayed with empty input box and cursor focused on input box after 2'. ![refresh-ft](./assets/readme-images/manual-test-images/features-test-images/refresh-ft.jpg)|
 
 ### Lighthouse Performance
 Confirmation that colors, font etc chosen are easy to read and accessible by running the site through lighthouse devtool

@@ -76,7 +76,7 @@ h4 {
 } 
   
 #footer>button { 
-    width: 48%; 
+    width: 100%; 
     padding: 1%; 
     margin: 5%; 
     background-color: lightgrey; 

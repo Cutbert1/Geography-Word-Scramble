@@ -1,5 +1,6 @@
 // country Array
-const country = ["Japan", "Italy", "Namibia", "France", "China", "Mexico", "India", "Bolivia", "Pakistan", "Egypt", "Peru", "Brazil", "Morocco", "South Korea",
+const country = [
+    "Japan", "Italy", "Namibia", "France", "China", "Mexico", "India", "Bolivia", "Pakistan", "Egypt", "Peru", "Brazil", "Morocco", "South Korea",
     "Greece", "Jordan", "Germany", "French Guiana", "United States of America", "Kenya", "Turkey", "Lebanon", "Croatia", "Tanzania", "Slovenia", "Sri Lanka",
     "Argentina", "Cambodia", "Australia", "Spain", "United Arab Emirate", "England", "Austria", "Iceland", "Philippines", "Czech Republic", "Guyana", "Bhutan",
     "Thailand", "Ecuador", "Zambia", "Nepal", "Russia", "South Africa", "Portugal", "Chile", "Venezuela", "Singapore", "Netherlands", "Sweden", "Albania", "Tibet", "Romania",
@@ -8,7 +9,8 @@ const country = ["Japan", "Italy", "Namibia", "France", "China", "Mexico", "Indi
 ];
 
 // hints  Array
-const hints = ["Fushimi Inari Taisha", "Colosseum", "Fish River Canyon", "Eiffel Tower", "Great Wall", "Chichen Itza", "Taj Mahal", "Lake Titicaca", "Badshahi Mosque",
+const hints = [
+    "Fushimi Inari Taisha", "Colosseum", "Fish River Canyon", "Eiffel Tower", "Great Wall", "Chichen Itza", "Taj Mahal", "Lake Titicaca", "Badshahi Mosque",
     "Pyramids of Giza", "Machu Picchu", "Christ the Redeemer", "Sahara Desert", "Gyeongbokgung Palace", "Acropolis", "Petra", "The Brandenburg Gate", "Salvation Islands",
     "The Golden Gate Bridge", "Masai Mara National Park", "The Blue Mosque", "Baalbek", "Plitvice Lakes National Park", "Kilimanjaro", "Lake Bled", "Sigiriya Lion Rock", 
     "Perito Moreno Glacier","Angkor Wat Temple Complex", "Great Barrier Reef", "Sagrada Familia", "Burj Khalifa", "Big Ben", "Schönbrunn Palace", "Sun Voyager", 
@@ -62,9 +64,11 @@ function check() {
         declaration.innerHTML = "Result: Incorrect";
         alert(`Hmmm...You answered ${input.value}. The correct answer is ${displayCountry}`);
         incrementIncorrectAnswer(); 
-    }
-       
+    } 
+    setTimeout(refresh, 2000);
 }
+
+
 
 // Event listener for keydown Enter
 document.getElementById("input").addEventListener("keydown", function (event) {
@@ -89,7 +93,6 @@ function incrementIncorrectAnswer() {
 
     let initialScore = (document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++initialScore;
-
 }
 
 //Refresh and show new record
@@ -114,5 +117,4 @@ function refresh() {
     document.getElementById("declaration").innerText = "Result:";
 }
 
-// Function call when page load for first time 
 addEventListener("load", () => refresh());
