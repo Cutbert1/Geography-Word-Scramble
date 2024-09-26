@@ -22,10 +22,16 @@ const hints = ["Fushimi Inari Taisha", "Colosseum", "Fish River Canyon", "Eiffel
 // Initialize display country with empty string
 let displayCountry = " ";
 
-// Shuffle letters Function
+/**
+ * gets a random integer within an upper bound og n
+ * @param {int} n, the upper bound [1<=n<inf]
+ * @returns <int>
+ */
 function getRandomInt(n) {
     return Math.floor(Math.random() * n);
 }
+
+// Shuffle letters Function
 
 function shuffle(str) {
     let array = str.split("");
@@ -109,4 +115,4 @@ function refresh() {
 }
 
 // Function call when page load for first time 
-refresh();
+addEventListener("load", () => refresh());
