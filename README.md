@@ -50,7 +50,7 @@ function shuffle(str) {
 ```
 ![shuffle](./assets/readme-images/features-images/scrambledword.jpg)
 #### Hint
-This is used to display const hint with matches the displayed random shuffled selected country name.
+This is used to display hint which gives a clue to displayed selected shuffled country name.
 ```js
     let index = Math.floor(Math.random() * 41);
     let displayHint = hints[index]; 
@@ -159,10 +159,10 @@ Future improvement can be to add City, match city, country to hint and ensure ci
 
 ### Lighthouse Performance
 Confirmation that colors, font etc chosen are easy to read and accessible by running the site through lighthouse devtool
-|View Tested|   Outcome of the audit  |Soulution Applied|Screenshot of clear Validator output|
+|View Tested|   Outcome of the audit  |Solution Applied|Screenshot of clear Validator output|
 |:------------|:----------------|:-------------|:------------|
-|Mobile|![lighthouse-mobile](./assets/readme-images/lighthouse-test-images/mobile-lh.jpg)|No solution required perfomance is 99%|N/A|
-|Desktop|![lighthouse-desktop](./assets/readme-images/lighthouse-test-images/desktop-lh.jpg)|No solution required perfomance is 100%|N/A|
+|Mobile|![lighthouse-mobile](./assets/readme-images/lighthouse-test-images/mobile-lh.jpg)|No solution required performance is 99%|N/A|
+|Desktop|![lighthouse-desktop](./assets/readme-images/lighthouse-test-images/desktop-lh.jpg)|No solution required performance is 100%|N/A|
 
 ### Validation Testing
 * Used [JSHint](https://jshint.com/) to validate JavScript
@@ -182,7 +182,8 @@ Confirmed that site displays consistently in tested browser and functionalities 
 |![firefox](./assets/readme-images/browser-compatibility-test/firefox.png)|Check Answer button, Refresh button, Alerts, Word Shuffle, Hints|Layout, design, content display consistency |Intended appearance and responsiveness is good|
 |![edge](./assets/readme-images/browser-compatibility-test/edge.png)|Check Answer button, Refresh button, Alerts, Word Shuffle, Hints|Layout, design, content display consistency |Intended appearance and responsiveness is good|
 ### Screen sizes Responsiveness 
-![screen-size-responsivenes](./assets/readme-images/responsive-test/screen%20size%20responsiveness.jpg)
+![screen-size-responsiveness](./assets/readme-images/responsive-test/screen%20size%20responsiveness.jpg)
+Relative value 85% width is used to style the game-area, this is to ensure app is responsive on all devices without having to use media queries.
 |Device Tested|Site responsive >=700px |Site responsive <699px|Render as expected|
 |:------------:|:----------------:|:-------------:|:--------------:|
 |iPhone 12 Pro (Mobile)|NA|Good|Good 390px X 844px ![mobile](./assets/readme-images/responsive-test/mobile.jpg)|
@@ -199,7 +200,7 @@ Confirmed that site displays consistently in tested browser and functionalities 
 #### Bugs Resolved
 |Bug|   Description |Solution Applied|Result|
 |:------------|:----------------|:-------------|:------------|
-|White space on input box|Due to white space on input box correct answer was interpreted as incorrect answer, hence incorrect answer alert even when the answer is correct. ![bug](./assets/readme-images/bugs-images/bug-tr.jpg)|Used  trim() function to trim the white space on the input|Bug resolved ![bug-fix](./assets/readme-images/bugs-images/bug-fix.jpg)|
+|White space on input box|Due to white space on input box correct answer was interpreted as incorrect answer, hence incorrect answer alert even when the answer is correct. ![bug](./assets/readme-images/bugs-images/bug-tr.jpg)|Used  trim() function to remove the white space on the input|Bug resolved ![bug-fix](./assets/readme-images/bugs-images/bug-fix.jpg)|
 #### Bugs Unresolved
 No unresolved bugs
 ### Libraries

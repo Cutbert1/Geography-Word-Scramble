@@ -1,5 +1,5 @@
 
- /* Asterisk wildcard selector to overide default styles added by the browser */
+ /* Asterisk wildcard selector to override default styles added by the browser */
  * {
     margin: 0;
     padding: 0;
@@ -13,9 +13,8 @@ body {
     text-align: center;
     display: flex; 
     flex-direction: column; 
-    justify-content: center; 
     align-items: center;
-    
+    justify-content: center; 
 }
 
 /* Heading */
@@ -46,7 +45,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: auto;
     border-bottom: 4px dashed
 }

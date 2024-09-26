@@ -60,7 +60,6 @@ function check() {
        
 }
 
-
 // Event listener for keydown Enter
 document.getElementById("input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
@@ -87,14 +86,13 @@ function incrementIncorrectAnswer() {
 
 }
 
-
 //Refresh and show new record
 function refresh() {
 
     // keep input box empty when refresh
     document.getElementById("input").value = " ";
 
-    //Set cursor to input box  when page is loaded- setting the focus
+    //Set cursor to input box  when page is loaded - setting the focus
     document.getElementById("input").focus();
 
     //Create random selection of countries with corresponding hints
